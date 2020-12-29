@@ -4,6 +4,12 @@ import Grid from '@material-ui/core/Grid';
 import React from 'react';
 
 function App() {
+
+  function satu(e) {
+    e.preventDefault();
+    console.log("1")
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -15,29 +21,16 @@ function App() {
             </Grid>
 
             <Grid item xs={3}>
-              <div className="btnSym">%</div>
-            </Grid>
-            <Grid item xs={3}>
               <div className="btnSym">C</div>
             </Grid>
             <Grid item xs={3}>
-              <div className="btnSym">CE</div>
+              <div className="btnSym">+/-</div>
             </Grid>
             <Grid item xs={3}>
-              <div className="btnSym">Del</div>
-            </Grid>
-
-            <Grid item xs={3}>
-              <div className="btnSym">1/x</div>
+              <div className="btnSym">%</div>
             </Grid>
             <Grid item xs={3}>
-              <div className="btnSym">x²</div>
-            </Grid>
-            <Grid item xs={3}>
-              <div className="btnSym">√x</div>
-            </Grid>
-            <Grid item xs={3}>
-              <div className="btnSym">÷</div>
+              <div className="btnSym">DEL</div>
             </Grid>
 
             <Grid item xs={3}>
@@ -50,7 +43,7 @@ function App() {
               <div className="btnNum">9</div>
             </Grid>
             <Grid item xs={3}>
-              <div className="btnSym">×</div>
+              <div className="btnSym">÷</div>
             </Grid>
 
             <Grid item xs={3}>
@@ -63,11 +56,11 @@ function App() {
               <div className="btnNum">6</div>
             </Grid>
             <Grid item xs={3}>
-              <div className="btnSym">-</div>
+              <div className="btnSym">×</div>
             </Grid>
 
             <Grid item xs={3}>
-              <div className="btnNum">1</div>
+              <div className="btnNum" onClick={satu}>1</div>
             </Grid>
             <Grid item xs={3}>
               <div className="btnNum">2</div>
@@ -76,12 +69,9 @@ function App() {
               <div className="btnNum">3</div>
             </Grid>
             <Grid item xs={3}>
-              <div className="btnSym">+</div>
+              <div className="btnSym">-</div>
             </Grid>
 
-            <Grid item xs={3}>
-              <div className="btnSym">+/-</div>
-            </Grid>
             <Grid item xs={3}>
               <div className="btnNum">0</div>
             </Grid>
@@ -90,6 +80,9 @@ function App() {
             </Grid>
             <Grid item xs={3}>
               <div className="btnEq">=</div>
+            </Grid>
+            <Grid item xs={3}>
+              <div className="btnSym">+</div>
             </Grid>
           </Grid>
         </div>
