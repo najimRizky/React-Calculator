@@ -75,3 +75,7 @@ li{
   border: 1px solid rgb(143, 143, 143);
   height: 30px;
 }
+
+.btnNum:hover, .btnSym:hover, .btnEq:hover{
+  background-color: rgb(56, 80, 2);
+}
